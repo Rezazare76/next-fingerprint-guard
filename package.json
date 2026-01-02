@@ -1,13 +1,13 @@
 {
   "name": "next-fingerprint-guard",
-  "version": "16.1.1",
+  "version": "16.1.2",
   "description": "Post-build fingerprint obfuscation tool for Next.js applications",
   "type": "module",
   "bin": {
     "next-fingerprint-guard": "./bin/next-fingerprint-guard.js"
   },
-   "author": "Reza Zare <rezazare2088@gmail.com>",
- "license": "MIT",
+  "author": "Reza Zare <rezazare2088@gmail.com>",
+  "license": "MIT",
   "keywords": [
     "nextjs",
     "security",
@@ -17,7 +17,8 @@
     "build",
     "cli",
     "next"
-  ], "repository": {
+  ],
+  "repository": {
     "type": "git",
     "url": "https://github.com/Rezazare76/next-fingerprint-guard.git"
   },

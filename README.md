@@ -8,33 +8,37 @@ static build artifacts and common fingerprinting tools, without modifying runtim
 ## Installation
 
 Install as a development dependency:
-
+```json
 npm install --save-dev next-fingerprint-guard
-
+```
 ## Usage
 
 Run the tool AFTER `next build`.
 
 Basic usage:
-
+```json
 NEXT_TARGET_VERSION=13.4.0 next-fingerprint-guard
-
+```
 This rewrites known Next.js version fingerprints inside the `.next` build output.
 
 ### Usage with package.json
 
 Add this to your scripts section:
 
+```json
 {
-"scripts": {
-"build": "next build && cross-env NEXT_TARGET_VERSION=13.4.0 next-fingerprint-guard"
+  "scripts": {
+    "build": "next build && cross-env NEXT_TARGET_VERSION=13.4.0 next-fingerprint-guard"
+  }
 }
-}
+```
+
 
 Then run:
 
+```json
 npm run build
-
+```
 ## What this tool does
 
 - Scans the `.next` production build output
